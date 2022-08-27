@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skills</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+        <div class="container">
+          <div class="panel">
+            <h2 class="text-center">Check your BMI</h2>
+            
+              <p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+              
+              <form>
+                <div id="weightInput">
+                  <p>Put your weight in here (KG)</p>
+                     <input id="weight" type="number" pattern="[0-9]*" name="a" />
+                </div>
+                <div id="heightInput">
+                  <p>And your height in here (CM)</p>
+                   <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+                </div>
+                 <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+            </form>
+            <div id="results" class="text-center">Your BMI results will appear here</div>
+          </div>
+        </div>
+      <script src="main.js"></script>
+ 
+
+  
+<div>
+  <h1>Skills</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+<label for="name">Name (4 to 8 characters):</label>
+
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+       <p></p>
+       <div></div>
+       <button type="button"
+       onclick="document.getElementById('demo').innerHTML = Date()">
+       Click me to display Date and Time.</button>
+       
+       <p id="demo"></p>
+       
+      </div>
+      <div id="demo">
+        <p>Let AJAX change this text.</p>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div>
+        
+        <script>
+        function loadDoc() {
+          const xhttp = new XMLHttpRequest();
+          xhttp.onload = function() {
+            document.getElementById("demo").innerHTML = this.responseText;
+          }
+          xhttp.open("GET", "ajax_info.txt");
+          xhttp.send();
+        }
+        </script>
+        
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+     
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
